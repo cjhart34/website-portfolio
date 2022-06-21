@@ -137,6 +137,10 @@ button {
 	display: inline-block;
 }
 
+main {
+	text-align: center;
+}
+
 .button {
 	/* @extend %button-shared; */
 	/* overwrites browser defaults and resets the border */
@@ -203,11 +207,13 @@ button:focus,
 }
 
 .profile__portrait {
-	float: left;
+	float: none;
 	width: 250px;
 	height: auto;
 	border-radius: 60%;
-	margin: auto 45px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .page-footer {
