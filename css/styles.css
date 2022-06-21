@@ -1,6 +1,8 @@
-/* Colors Used: 
+/* Colors Used:
 #357b70 (Cyan), #006400 (Dark Green), #0000FF (Blue), #05676e (Dark Cyan), #e0b354 (Yellow/Orange), #489c79 (Green), #2b2b2b (Dark grey), #f76414 (Orange)
 */
+
+}
 :root {
 	--primary-color:  #357b70;
 	--secondary-color: #e0b354;
@@ -56,6 +58,11 @@ footer {
 	font-weight: 400;
 }
 
+hr {
+	width: 90%;
+	border: 1px solid gray;
+}
+
 a {
 	color: var(--primary-color);
 	transition: 0.8s;
@@ -83,8 +90,8 @@ a:active {
 	text-decoration: var(--text-decoration);
 }
 
-/*This "%button-shared" is not working in my code for some reason. I take out all the redundant lines from "button, .button" and from ".button1" and leave 
-the "@extend %button-shared;", and it removes all formatting from my buttons essentially. I'm just not sure why.*/ 
+/*This "%button-shared" is not working in my code for some reason. I take out all the redundant lines from "button, .button" and from ".button1" and leave
+the "@extend %button-shared;", and it removes all formatting from my buttons essentially. I'm just not sure why.*/
 
 
 
@@ -105,7 +112,8 @@ the "@extend %button-shared;", and it removes all formatting from my buttons ess
 
 button,
 .button {
-	/* @extend %button-shared; */ 
+	
+	/* @extend %button-shared; */
 	/* overwrites browser defaults and resets the border */
 	border:  none;
 	/* takes the font from the outer container */
@@ -151,7 +159,7 @@ button,
 	padding-left: 40px;
 }
 
-button:hover, 
+button:hover,
 button:focus,
 .button:hover,
 .button:focus {
@@ -182,6 +190,9 @@ button:focus,
 .profile {
 	margin: 0 auto;
 	max-width: 700px;
+	padding: 50px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 }
 
 * {
@@ -273,10 +284,12 @@ button:focus,
 	.grid {
 		grid-template-columns: 1fr;
 		grid-gap: 10px;
+		border-radius: 4px;
 	}
 	.grid__item:last-child {
 		grid-column: auto / auto;
 		grid-row: auto / auto;
+		border-radius: 4px;
 	}
 	h1 {
 		font-size: 22px;

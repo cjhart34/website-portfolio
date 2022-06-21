@@ -1,11 +1,11 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
 
-/* Colors Used: 
+/* Colors Used:
 #357b70 (Cyan), #006400 (Dark Green), #0000FF (Blue), #05676e (Dark Cyan), #e0b354 (Yellow/Orange), #489c79 (Green), #2b2b2b (Dark grey), #f76414 (Orange)
 */
 
@@ -57,6 +57,11 @@ footer {
 	font-weight: 400;
 }
 
+hr {
+	width: 90%;
+	border: 1px solid gray;
+}
+
 a {
 	color: #357b70;
 	-webkit-transition: 0.8s;
@@ -95,8 +100,8 @@ a:active {
 	text-decoration: none;
 }
 
-/*This "%button-shared" is not working in my code for some reason. I take out all the redundant lines from "button, .button" and from ".button1" and leave 
-the "@extend %button-shared;", and it removes all formatting from my buttons essentially. I'm just not sure why.*/ 
+/*This "%button-shared" is not working in my code for some reason. I take out all the redundant lines from "button, .button" and from ".button1" and leave
+the "@extend %button-shared;", and it removes all formatting from my buttons essentially. I'm just not sure why.*/
 
 
 
@@ -116,7 +121,7 @@ the "@extend %button-shared;", and it removes all formatting from my buttons ess
 }
 
 button {
-	/* @extend %button-shared; */ 
+	/* @extend %button-shared; */
 	/* overwrites browser defaults and resets the border */
 	border:  none;
 	/* takes the font from the outer container */
@@ -133,7 +138,7 @@ button {
 }
 
 .button {
-	/* @extend %button-shared; */ 
+	/* @extend %button-shared; */
 	/* overwrites browser defaults and resets the border */
 	border:  none;
 	/* takes the font from the outer container */
@@ -181,7 +186,7 @@ button {
 	padding-left: 40px;
 }
 
-button:hover, 
+button:hover,
 button:focus,
 .button:hover,
 .button:focus {
