@@ -47,6 +47,10 @@ h3 {
 	font-weight: 700
 }
 
+li {
+	font-size: 20px;
+}
+
 header {
 	font-size: 16px;
 	font-weight: 400;
@@ -137,6 +141,9 @@ button {
 	display: inline-block;
 }
 
+th {
+	padding: 20px;
+}
 main {
 	text-align: center;
 }
@@ -167,14 +174,16 @@ main {
 	background-color: #357b70;
 	color:  white;
 	text-decoration: none;
-	padding: 10px;
 	border-radius: 3px;
 	/* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
 	border-bottom:  2px solid rgba(0, 0, 0, 0.3);
 	text-align: center;
-	margin: 0 auto;
-	display: block;
-	max-width: 150px;
+	margin: auto;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	max-width: 200px;
+	padding: 5px;
 }
 
 .i-am {
@@ -183,7 +192,8 @@ main {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	margin: auto;
-	padding: 20px;
+	padding: 40px;
+	font-size: 20px;
 }
 
 .my-info {
@@ -210,6 +220,16 @@ button:focus,
 	float: none;
 	width: 250px;
 	height: auto;
+	border-radius: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.doggos {
+	float: none;
+	width: 30%;
+	height: 400px;
 	border-radius: 60%;
 	display: block;
 	margin-left: auto;
