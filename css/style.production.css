@@ -302,6 +302,7 @@ button:focus,
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	text-align: center;
+	padding-left: 0;
 }
 
 .navigation-list li {
